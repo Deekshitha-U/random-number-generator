@@ -1,0 +1,33 @@
+/* GenerateButton.css */
+.generate-btn {
+  padding: 1rem 2.2rem;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #fff;
+  font: 600 1rem "Poppins", sans-serif;
+  background: linear-gradient(120deg, var(--violet), var(--pink), var(--cyan));
+  background-size: 220% 100%;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.45);
+  transition: transform 0.2s, background-position 0.5s, box-shadow 0.2s;
+}
+
+.generate-btn:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.03);
+  background-position: 100% 0;
+  box-shadow: 0 14px 40px rgba(236, 72, 153, 0.5);
+}
+
+.generate-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.generate-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.generate-btn:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+}

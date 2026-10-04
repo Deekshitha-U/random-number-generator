@@ -1,0 +1,40 @@
+/* History.css */
+.history {
+  text-align: center;
+}
+
+.history__title {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.history__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 420px;
+}
+
+.history__item {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 92, 246, 0.45);
+  background: rgba(139, 92, 246, 0.12);
+  opacity: calc(1 - var(--i) * 0.1);
+  animation: history-in 0.4s ease-out;
+}
+
+@keyframes history-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}

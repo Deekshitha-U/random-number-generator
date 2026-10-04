@@ -1,0 +1,59 @@
+/* App.css - page layout, orb area rings, error text */
+.app {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 3rem 1.25rem 4rem;
+  overflow: hidden;
+}
+
+.app > * {
+  position: relative;
+  z-index: 1;
+}
+
+.app__orb-area {
+  position: relative;
+  width: min(300px, 78vw);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.app__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(34, 211, 238, 0.45);
+  animation: ring-spin 14s linear infinite;
+}
+
+.app__ring--two {
+  inset: -9%;
+  border-color: rgba(236, 72, 153, 0.4);
+  animation-duration: 22s;
+  animation-direction: reverse;
+}
+
+@keyframes ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.app__error {
+  color: #fda4af;
+  font-size: 0.85rem;
+}

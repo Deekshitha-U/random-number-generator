@@ -1,0 +1,39 @@
+/* RangeInput.css */
+.range {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.range__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.range__field input {
+  width: 110px;
+  padding: 0.65rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  background: rgba(20, 16, 56, 0.7);
+  color: var(--text);
+  font: 500 1rem "Poppins", sans-serif;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.range__field input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+.range__arrow {
+  color: var(--violet);
+  padding-bottom: 0.7rem;
+}

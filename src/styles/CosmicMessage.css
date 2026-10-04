@@ -1,0 +1,23 @@
+/* CosmicMessage.css */
+.cosmic-message {
+  min-height: 1.5rem;
+  font-size: 1rem;
+  color: var(--text);
+  text-align: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.14);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  animation: message-rise 0.5s ease-out;
+}
+
+@keyframes message-rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
